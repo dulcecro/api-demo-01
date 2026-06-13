@@ -1,0 +1,10 @@
+quarkus:
+  http:
+    port: 8686
+  datasource:
+    db-kind: postgresql
+    username: ${app.config.db.username}
+    password: ${app.config.db.password}
+    jdbc:
+      url: jdbc:postgresql://server-prod:5432/db_orders_management_v1
+
